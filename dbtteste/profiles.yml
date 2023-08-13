@@ -1,0 +1,24 @@
+dbtteste:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 54320
+      user: user
+      pass: admin
+      dbname: test_dbt
+      schema: dbt
+
+    prod:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 54320
+      user: user
+      pass: admin
+      dbname: test_dbt
+      schema: dbt-prod
+
+  target: dev
